@@ -44,6 +44,9 @@
 
                     <TextView
                         android:id="@+id/positionNameTV"
+                        android:textColor="#777777"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
                         android:text="@{homeViewModel.position.name}"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -52,6 +55,9 @@
 
                     <TextView
                         android:id="@+id/clientNameTV"
+                        android:textColor="#777777"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
                         android:text="@{homeViewModel.client.name}"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -66,7 +72,11 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:gravity="end"
                         android:id="@+id/wageAmountTV"
+                        android:textColor="#777777"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
                         android:text="@{String.valueOf(homeViewModel.wage_amount)}"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -74,7 +84,11 @@
                         android:layout_weight="1" />
 
                     <TextView
+                        android:gravity="end"
                         android:id="@+id/wageTypeTV"
+                        android:textColor="#777777"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
                         android:text="@{String.valueOf(homeViewModel.wage_type)}"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -86,6 +100,7 @@
 
 
             <LinearLayout
+                android:layout_marginTop="24dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
@@ -101,6 +116,8 @@
 
                 <TextView
                     android:id="@+id/addressTV"
+                    android:textColor="#777777"
+                    android:textSize="13sp"
                     android:text="@{homeViewModel.location.address.street_1}"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -131,6 +148,8 @@
 
                     <TextView
                         android:id="@+id/textView1"
+                        android:textColor="#777777"
+                        android:textSize="13sp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -140,6 +159,8 @@
 
                 <TextView
                     android:id="@+id/managerNameTV"
+                    android:textColor="#777777"
+                    android:textSize="13sp"
                     android:text="Yai Thong-oon"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -171,6 +192,8 @@
 
                     <TextView
                         android:id="@+id/textView2"
+                        android:textColor="#777777"
+                        android:textSize="13sp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -184,6 +207,8 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_weight="1"
+                    android:textColor="#777777"
+                    android:textSize="13sp"
                     android:text="+66-955-5695-65"/>
 
             </LinearLayout>
@@ -206,6 +231,8 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_weight="1"
+                        android:textColor="#777777"
+                        android:textSize="13sp"
                         android:text="Clock in" />
 
                     <TextView
@@ -214,6 +241,8 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_weight="1"
+                        android:textColor="#777777"
+                        android:textSize="25sp"
                         android:text="-" />
                 </LinearLayout>
 
@@ -229,6 +258,8 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_weight="1"
+                        android:textColor="#777777"
+                        android:textSize="13sp"
                         android:text="Clock out" />
 
                     <TextView
@@ -237,6 +268,8 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_weight="1"
+                        android:textColor="#777777"
+                        android:textSize="25sp"
                         android:text="-" />
                 </LinearLayout>
 
@@ -259,15 +292,14 @@
             android:id="@+id/button"
             android:layout_width="105dp"
             android:layout_height="105dp"
-            android:layout_marginTop="60dp"
             android:background="@drawable/btn_rounded"
             android:hint="Clock In"
             android:textAllCaps="false"
             android:textColor="#777777"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_background"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+            app:layout_constraintTop_toTopOf="@+id/btn_background" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
 

@@ -6,9 +6,9 @@ import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class APIClient {
+import static com.workmate.mobile.util.Constants.BASE_URL;
 
-    public static final String BASE_URL ="https://api.helpster.tech/v1/";
+public class APIClient {
 
     private static Retrofit retrofit = null;
 
